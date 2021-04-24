@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1619189698 source:c:\users\hp\documents\embeddedc\testcode\fuse.c
+	<avr/io.h>
+
+1619263938 source:c:\users\hp\documents\embeddedc\testcode\main.c
+	<avr/io.h>
+	<util/delay.h>
+
