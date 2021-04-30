@@ -26,12 +26,12 @@ int main(void)
     while(1)
     {
 
-       if(bit_is_clear(PIND, 0)) // checking if passenger is present or not by checking pin 0 of Port D
+       if(bit_is_clear(PIND, 0)) // check pin 0 of portD for passenger
         {
 
-            if(bit_is_clear(PIND, 1)) // checking if button pressed or not by checking pin 1 of port D
+            if(bit_is_clear(PIND, 1)) // check pin 1 or portD for button
             {
-                PORTB=0b00000001; //LED ON if passenger present and heater button pressed 
+                PORTB=0b00000001; //LED ON 
                 _delay_ms(200);
                 /** @brief ADC Configuration
                 * 
@@ -39,17 +39,17 @@ int main(void)
                 InitADC();
                 TCCR0A|=(1<<COM0A1)|(1<<WGM00)|(1<<WGM01); //Select fast OWM with MAX TOP and SET PWM in non inverting mode
                 TCCR0B|=(1<<CS00);  //selecting No prescaling
-                /** @brief Reads i/p to the channel, sampling & quantization process occurs
+                /** @brief Reads i/p to the channel
                 *   @param ADC channel number used
-                *   @return digital equalent of analog input signal
+                *   @return digital equvivalent
                 */
                 temp = ReadADC(0);
                 USART_init();
-                /** @brief compares temperature value and gives PWM output
+                /** @brief compares temperature value and gives PWM o/p
                 *   @param ADC value stored in temp variable
                 */
                 compare(temp);
-                /** @brief dispaly messages in Serial Moniter using USART  
+                /** @brief dispaly messages in Serial Moniter
                  *  @param ADC value stored in temp variable
                  */
                 display(temp);
