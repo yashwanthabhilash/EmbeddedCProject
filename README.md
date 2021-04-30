@@ -1,4 +1,6 @@
-# EmbeddedCProject
+# EmbeddedCProject 
+# ______________________
+# Car Driver Seat Heater
 
 ## inc - All header files
 ## Simulation - Screenshots attached
