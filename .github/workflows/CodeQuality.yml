@@ -1,4 +1,4 @@
-name: Code Quality - Static Code - Cppcheck
+name: Cppcheck
 
 on:
   push:
@@ -7,13 +7,13 @@ on:
     branches: [ main ]
 
 jobs:
-  cppcheck:
+  build:
 
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
-    - name: Install cppcheck
-      run: sudo apt -y install cppcheck
-    - name: Run cppcheck
-      run: make analysis 
+    - name: get_cppcheck
+      run: sudo apt-get install cppcheck
+    - name: Code Quality
+      run: make analysis
