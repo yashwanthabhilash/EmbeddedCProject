@@ -1,0 +1,65 @@
+\hypertarget{main_8c}{}\doxysection{main.\+c File Reference}
+\label{main_8c}\index{main.c@{main.c}}
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+{\ttfamily \#include $<$util/delay.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}activity1.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}activity2.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}activity3.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}activity4.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8c_a36142ddde297ed1d5577c81230997301}\label{main_8c_a36142ddde297ed1d5577c81230997301}} 
+uint16\+\_\+t {\bfseries temp}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Yashwanth (256287) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021-\/04-\/30
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2021 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{main_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+intializes and declares all required ports
+
+ADC Configuration
+
+Reads i/p to the channel 
+\begin{DoxyParams}{Parameters}
+{\em ADC} & channel number used \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+digital equvivalent
+\end{DoxyReturn}
+compares temperature value and gives PWM o/p 
+\begin{DoxyParams}{Parameters}
+{\em ADC} & value stored in temp variable\\
+\hline
+\end{DoxyParams}
+dispaly messages in Serial Moniter 
+\begin{DoxyParams}{Parameters}
+{\em ADC} & value stored in temp variable\\
+\hline
+\end{DoxyParams}
