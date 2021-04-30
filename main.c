@@ -10,10 +10,10 @@
  */
 #include <avr/io.h>
 #include<util/delay.h>
-#include "activity1.h"
-#include "activity2.h"
-#include "activity3.h"
-#include "activity4.h"
+#include"1_LED_Switch.h"
+#include"2_Read_ADC.h"
+#include"3_PWM_Output.h"
+#include"4_UART.h"
 
 
 uint16_t temp;  //intializing temp
