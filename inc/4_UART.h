@@ -1,3 +1,14 @@
+/**
+ * @file 4_UART.h
+ * @author Yashwanth (256287) (yashwanthabhilash@outlook.com)
+ * @brief USART header file
+ * @version 0.1
+ * @date 2021-04-30
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #ifndef ACTIVITY4_H_INCLUDED
 #define ACTIVITY4_H_INCLUDED
 
