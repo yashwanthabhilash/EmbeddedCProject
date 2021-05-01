@@ -42,7 +42,7 @@ void USART_init()
 void display(uint16_t temp)
 {
     if(temp<=200)
-       {   unsigned char data[] = "Temperature: 20 deg celsius ";//print
+       {   unsigned char data[] = "20 degree celsius ";//print
            i=0;
            while(data[i]!=0)
            {
@@ -53,7 +53,7 @@ void display(uint16_t temp)
        }
       else if(temp>200 && temp<=500)
        {
-        unsigned char data[] = "Temperature: 25 deg celsius "; 
+        unsigned char data[] = "25 degree celsius "; 
         i=0;
         while(data[i]!=0)
            {
@@ -64,7 +64,7 @@ void display(uint16_t temp)
        }
       else if(temp>500 && temp<=710)
         {
-            unsigned char data[] = "Temperature: 29 deg celsius ";
+            unsigned char data[] = "29 degree celsius ";
             i=0;
             while(data[i]!=0)
            {
@@ -75,7 +75,7 @@ void display(uint16_t temp)
         }
       else
          {
-             unsigned char data[] = "Temperature: 30 deg celsius ";
+             unsigned char data[] = "30 degree celsius ";
              i=0;
              while(data[i]!=0)
            {
